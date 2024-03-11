@@ -1,0 +1,438 @@
+:root {
+  --branding-color: #335a4b;
+  --secondary-color: #608e7b;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: var(--tertiary-color);
+}
+
+hr {
+  color: var(--branding-color);
+  margin-bottom: 30px;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: var(--tertiary-color);
+  text-underline-offset: 0.3em;
+}
+
+.website-logo {
+  border-radius: 100%;
+  margin-bottom: 8px !important;
+  transition: all 200ms ease-in-out;
+}
+
+.website-logo:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.navbar .home-page ul {
+  background: #f6f4ef;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  padding: 160px 20px 100px 20px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero h2 {
+  color: #272142;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding:hover {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: var(--branding-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.projects-button,
+.resume-button {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 40%;
+}
+
+.projects-button:hover,
+.resume-button:hover {
+  background: white;
+  color: var(--branding-color);
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 40%;
+}
+
+.btn-branding-outline {
+  border-radius: 4px;
+  border: 1px solid var(--branding-color);
+  color: var(--branding-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  background: var(--branding-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-description {
+  padding: 80px 60px;
+}
+
+.pb-5 {
+  padding-bottom: 60px !important;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content p {
+  line-height: 2;
+}
+
+.content h2,
+.contact-links h2 {
+  font-family: var(--default-font-family);
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 20px 0 5px 0;
+}
+
+.content-container {
+  padding-top: 100px;
+}
+
+.skills-row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-container .skill {
+  width: 100px;
+}
+
+.content {
+  margin: 10px auto;
+}
+
+.work-heading {
+  margin-bottom: 50px;
+}
+
+.contact-links {
+  padding: 10px 50px;
+}
+
+.contact-links a {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.skills img {
+  transition: all 200ms ease-in-out;
+}
+
+.skills img:hover {
+  transform: scale(115%);
+}
+
+.work i {
+  transition: all 200ms ease-in-out;
+}
+
+.work i:hover {
+  transform: scale(115%);
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 30px 120px;
+}
+
+.work-inquiry {
+  font-size: 48px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .contact-me-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer .contact-me-button .selected a {
+  align-self: center;
+  padding: 10px 20px;
+}
+
+footer .contact-me-button .selected a:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+footer .email-link {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+.social-links {
+  margin: 10px;
+}
+
+footer .social-links a {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  transition: all 200ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  background-color: var(--branding-color);
+  color: white;
+}
+
+/* mobile */
+@media (max-width: 960px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h3.featured {
+    font-size: 14px;
+  }
+
+  .work-inquiry {
+    font-size: 20px;
+  }
+
+  h2.skills-heading {
+    font-size: 18px;
+  }
+
+  .contact-links h2 {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h2 {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .hero p {
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .work-heading {
+    font-size: 36px;
+  }
+
+  .content-container {
+    padding: 40px 20px 5px 20px;
+    text-align: center;
+  }
+
+  .skills-row {
+    width: 80%;
+  }
+
+  .content h1 {
+    font-size: 52px;
+  }
+
+  .content p {
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+
+  .contact-links {
+    padding: 0;
+  }
+
+  .contact-links a {
+    font-size: 14px;
+  }
+
+  .projects-button,
+  .resume-button {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+  }
+
+  .projects-button:hover,
+  .resume-button:hover {
+    background: white;
+    color: var(--branding-color);
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+  }
+  footer .contact-box {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  footer .contact-box p {
+    font-size: 14px;
+  }
+
+  footer .btn {
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 15px;
+  }
+
+  footer .email-link {
+    font-size: 14px;
+  }
+
+  footer .social-links a {
+    font-size: 14px;
+  }
+}
